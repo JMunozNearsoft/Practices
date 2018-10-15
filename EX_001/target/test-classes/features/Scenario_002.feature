@@ -19,3 +19,4 @@ Scenario: Search an hotel, any date, any city, 2 adults, 2 rooms (1 adult per ro
 	And User search an hotel "Posada"
 	And User select hotel No "1"
 	Then Page shows Hotel result
+	Then Explorer is closed

@@ -18,6 +18,7 @@ Scenario: Search for a flight, one way, any city, any date, one adult
 	And User order flight "Salida (primera)"
 	And User select third flight
 	Then Summary trip page is displayed
+	Then Explorer is closed
 	
 
 	

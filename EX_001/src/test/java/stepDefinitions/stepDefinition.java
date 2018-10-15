@@ -236,6 +236,11 @@ public class stepDefinition{
     public void user_select_hotel_no_something(String strArg1) throws Throwable {
         searchResult.getHotel(strArg1).click();
     }
+    
+    @Then("^Explorer is closed$")
+    public void explorer_is_closed() throws Throwable {
+        driver.quit();
+    }
 
     static WebDriver driver;
 	static HomePage homePage;
